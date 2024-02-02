@@ -23,7 +23,7 @@ def intro():
 
 
 
-ctypes.windll.kernel32.SetConsoleTitleW(f"DCWRITER By Xubiz#0001/#1186 | discord.gg/A4uw29W | ")
+ctypes.windll.kernel32.SetConsoleTitleW(f" ;) ")
 intro()
 if os.path.exists("token.txt"):
     print(Fore.GREEN + time.strftime("[%H:%M:%S]", time.localtime()) + f' Found Token!')
@@ -71,7 +71,7 @@ while 1:
                             check_time = time.time() - start
                             tz = time.strftime("%H:%M:%S", time.gmtime(check_time))
                             ctypes.windll.kernel32.SetConsoleTitleW(
-                                f"DCWRITER By Xubiz#0001/#1186 | discord.gg/A4uw29W | Time: {tz} | Sended Messages: {writed_message}")
+                                f"DCWRITER | Time: {tz} | Sended Messages: {writed_message}")
                             writed_message += 1
                     else:
                         await message.channel.send('Im already writing stupid asshole...')
